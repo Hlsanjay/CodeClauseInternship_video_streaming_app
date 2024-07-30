@@ -1,0 +1,222 @@
+.dashboard-container {
+    display: flex;
+    align-items: flex-start; /* Align items at the start vertically */
+    padding: 20px;
+    background-color: #191C33;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.user-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #ccc; /* Background color or image */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    border: 2px solid #ffffff; /* Solid white border */
+}
+
+.user-icon i {
+    color: #ffffff; /* Icon color */
+    font-size: 24px; /* Adjust size as needed */
+}
+
+.user-name {
+    font-size: 24px;
+    color: #ffffff;
+}
+
+.sidebar {
+    display: flex; 
+    flex-direction: row; 
+    align-items: center; /* Center items vertically */
+    margin-left: 190px;
+    margin-top: 60px;
+    font-size: 24px;
+}
+
+.sidebar-item {
+    margin-left: 40px; /* Space between items */
+    cursor: pointer;
+    transition: transform 0.3s ease; 
+    color: #ffffff;
+}
+
+.sidebar-item:hover {
+    transform: scale(1.1); /* Increase size by 10% */
+}
+
+.upload {
+    margin-top: 40px;
+    font-size: 24px; 
+    color: #ffffff;
+    margin-left: 90px;  
+    background-color: transparent;
+    border: 2px solid #ffffff; /* White border */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Smooth transition for all changes */
+}
+.upload-form {
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: auto;
+}
+
+.upload-form input,
+.upload-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.upload-form textarea {
+    resize: vertical;
+    height: 150px;
+}
+
+.upload-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.upload-form button:hover {
+    background-color: #0056b3;
+}
+.upload-form input::placeholder,
+.upload-form textarea::placeholder {
+    color: #888; 
+    
+    
+opacity: 1; }
+
+
+.upload:hover {
+    background: linear-gradient(45deg, #1e90ff, #ff1493); /* Gradient background */
+    color: #ffffff; /* Text color */
+    border-color: #ffffff; /* Border color */
+    transform: scale(1.05); /* Slightly increase size on hover */
+}
+.visibility-options {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .visibility-options label {
+    display: contents;
+  }
+
+  .visibility-options input[type="radio"] {
+    margin-right: 8px; /* Adds space between the radio button and the text */
+    margin-top: 17px; /* Moves the radio button down by 10px */
+}
+
+/*video section*/
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.videos-uploaded {
+    padding: 20px;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+}
+
+.videos-uploaded h2 {
+    font-size: 1.8em;
+    margin-bottom: 30px;
+    color: #333;
+    border-bottom: 2px solid #e1e1e1;
+    padding-bottom: 10px;
+}
+
+.video-item {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    padding: 15px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    overflow: hidden;
+}
+
+.video-item:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.video-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin-bottom: 10px;
+}
+
+.video-item h3 {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+    color: #333;
+    line-height: 1.2;
+}
+
+.video-item p {
+    font-size: 0.95em;
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+video {
+    width: 100%;
+    height: 200px;
+    border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+    .videos-uploaded h2 {
+        font-size: 1.5em;
+        margin-bottom: 20px;
+    }
+    
+    .video-item {
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+
+    .video-item h3 {
+        font-size: 1.1em;
+    }
+
+    .video-item p {
+        font-size: 0.85em;
+    }
+}
+ 

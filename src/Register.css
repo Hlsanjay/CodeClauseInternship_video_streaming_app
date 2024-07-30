@@ -1,0 +1,99 @@
+/* General Styles */
+body {
+    background-color: #F0F4F9;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container for the form */
+.register-container {
+    background-color: #FFFFFF;
+    width: 450px;
+    margin: 50px auto;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Group Styles */
+.form-group {
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+/* Label Styles */
+.form-group label {
+    position: absolute;
+    top: 0.75rem; /* Position label at the top of the input field */
+    left: 0.75rem; /* Position label inside the left of the input field */
+    font-size: 1rem;
+    color: #757575;
+    transition: all 0.3s ease;
+    pointer-events: none; /* Prevent label from interfering with input interactions */
+}
+
+/* Input Styles */
+.form-group input {
+    width: 100%;
+    padding: 1rem 0.75rem; /* Add padding to leave space for the label */
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+/* Move label up when input is focused or has a value */
+.form-group input:focus ~ label,
+.form-group input:not(:placeholder-shown) ~ label {
+    top: -0.01rem;
+    left: 0.75rem; /* Keep label inside left padding */
+    font-size: 0.75rem;
+    padding-top: 0.3rem; /* Adjust as needed for desired padding */
+}
+
+
+/* Button Styles */
+button {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #0E4EB5;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+input::placeholder{
+    color: transparent;
+}
+button:hover {
+    background-color: #0F4EB7;
+}
+
+/* Links */
+p {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+p a {
+    color: #6C52EE;
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+/* Optional: Add styles for the terms and privacy policy links */
+p a[href="/terms"] {
+    margin-right: 0.5rem;
+}
+
+p a[href="/privacy"] {
+    margin-left: 0.5rem;
+}

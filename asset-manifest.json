@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/CodeClauseInternship_video_streaming_app/static/css/main.c50f0aa1.css",
-    "main.js": "/CodeClauseInternship_video_streaming_app/static/js/main.a528a28e.js",
+    "main.js": "/CodeClauseInternship_video_streaming_app/static/js/main.b91bbe9a.js",
     "index.html": "/CodeClauseInternship_video_streaming_app/index.html",
     "main.c50f0aa1.css.map": "/CodeClauseInternship_video_streaming_app/static/css/main.c50f0aa1.css.map",
-    "main.a528a28e.js.map": "/CodeClauseInternship_video_streaming_app/static/js/main.a528a28e.js.map"
+    "main.b91bbe9a.js.map": "/CodeClauseInternship_video_streaming_app/static/js/main.b91bbe9a.js.map"
   },
   "entrypoints": [
     "static/css/main.c50f0aa1.css",
-    "static/js/main.a528a28e.js"
+    "static/js/main.b91bbe9a.js"
   ]
 }

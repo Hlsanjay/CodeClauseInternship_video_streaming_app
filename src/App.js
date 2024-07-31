@@ -1,20 +1,19 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import { HashRouter, Routes, Route, Navigate, HashRouter } from 'react-router-dom';
 import Register from './Register';
 import Login from './Login';
 import Dashboard from './Dashboard';
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path="/" element={<Navigate to="/register" />} />
         <Route path="/register" element={<Register />} />
         <Route path="/login" element={<Login />} />
         <Route path="/Dashboard" element={< Dashboard/>}/> 
       </Routes>
-    </BrowserRouter>
-    // <Dashboard/>
+    </HashRouter>
   );
 }
 
